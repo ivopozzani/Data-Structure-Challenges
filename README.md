@@ -1,2 +1,2 @@
 # Data Structure Challenges
- This repository is a backup of all codes I'm creating when solving data structure challenges.  
+ This repository will work as a backup of all data structure challenges I code in both JavaScript and Java
