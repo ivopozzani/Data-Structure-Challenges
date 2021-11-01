@@ -1,19 +1,20 @@
+const inputArray = ["Anyworld", "Anyworldwithanysize", "word1234", "anyamount"];
 
-function stringToMatriz(vetor) {
+function stringToMatriz(input) {
   let i = 0;
   let u = 0;
   let control = 0;
   let r = "";
-  while (i < vetor.length && control != vetor.length) {
-    if (vetor[i].charAt(u)){
-      r = `${r}` + `${vetor[i].charAt(u)}`
+  while (control != input.length) {
+    if (input[i].charAt(u)){
+      r = `${r}` + `${input[i].charAt(u)}`
       control = 0;
     } else {
       control++;
     }
     
     i++;
-    if (i == vetor.length) {      
+    if (i == input.length) {      
       i = 0;
       u++;  
     } 
@@ -22,5 +23,4 @@ function stringToMatriz(vetor) {
   return console.log(r)
 } 
 
-const vetString = ["abcdefghijklmnopqrstuvwxyz", "abcdefghijklm", "abcdefghi", "abcdefghijklm"];
-stringToMatriz(vetString);
+stringToMatriz(inputArray);
